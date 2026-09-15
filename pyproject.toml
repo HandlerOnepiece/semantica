@@ -362,5 +362,15 @@ profile = "black"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [
-    "integration: marks tests that require external services or API keys (deselect with '-m not integration')",
+  "integration: marks tests that require external services or API keys (deselect with '-m not integration')",
 ]
+
+
+[[tool.uv.index]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
